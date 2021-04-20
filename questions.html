@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" id="questionScreen" >
+<div class="titleDD">Online Quiz Application</div>
+<div class="header">
+    <div class="scoreBox" >Score:<span id="scoreBox"></span></div>
+    <div class="timerBox">Time Left:<span id="min"></span>:<span id="sec"></span></div>
+</div>
+<div class="QuestionContainer">
+<div id="questionN" style="font-size: 1.2rem;"></div>
+<div class="questionBox" id="ques">
+</div>
+
+</div>
+
+
+<div class="optionBox">
+
+<div   >
+<input type="radio" name="choice" value="A" onclick="checkAnswer(this)" id="1"></input><span id="A"></span>
+</div>
+
+<div  >
+<input type="radio" name="choice" value="B" onclick="checkAnswer(this)" id="2"><span id="B"></span>
+</div>
+
+<div   >
+<input type="radio" name="choice" value="C" onclick="checkAnswer(this)" id="3"><span id="C"></span>
+</div>
+
+<div  >
+<input type="radio" name="choice" value="D" onclick="checkAnswer(this)" id="4"><span id="D"></span>
+</div>
+
+
+
+</div>
+
+<div class="footer">
+   <button onclick="previousQuestion()" >previous</button>
+    <button onclick="NextQuestion()">Next</button>
+    <button>SUBMIT</button>
+</div>
+    </div>
+
+
+    <div  class="box" id="resultScreen" style="display: none;">
+     <div class="titleDD">Online Quiz Application</div>
+     <div class="resultBox">
+         <label> Questions :</label>
+         <span id="totalQuestion">10</span>
+
+          <label> Attempt :</label>
+         <span id="attemptQuestion">1</span>
+
+         <label> Correct :</label>
+         <span id="correctAnswer">1</span>
+
+         <label> wrong :</label>
+         <span id="wrongAnswer">1</span>
+     </div>
+     <div class="footerResult">
+         <a href="index.html" class="">Start Again </a>
+     </div>
+    </div>
+    <script type="text/javascript" src='myjavascript.js'></script>
+
+
+</body>
+</html>
